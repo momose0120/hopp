@@ -1,0 +1,304 @@
+
+
+.aform-header{
+	font-size: 130%;
+	font-weight: bold;
+	margin: 1em 0 1em;
+	padding: 3px 0;
+	border-bottom: 1px solid #ccc;
+}
+.aform-hdln{
+	font-size: 120%;
+	font-weight: bold;
+	margin: 2em 0 0.5em;
+	padding: 3px 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.aform-input.error{
+	background: #FDECF1;
+}
+
+.aform-content ul,
+.aform-content li,
+.aform-content dl p{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+
+.aform-content dl{
+	margin: 0.5em 0;
+	padding: 0.5em 0;
+}
+.aform-content dl dt{
+	font-weight: bold;
+}
+.aform-content dl dd{
+	margin: 0 0 0.5em;
+}
+
+
+.aform-content dl input,
+.aform-content dl textarea,
+.aform-content dl select{
+	font-size: 120%;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.aform-content dl input[type="radio"],
+.aform-content dl input[type="checkbox"],
+.aform-content dl input[type="file"]{
+	font-size: inherit;
+	width: auto;
+	padding: 0;
+}
+
+.aform-content ul input,
+.aform-content dl .aform-calendar{
+	width: auto;
+}
+
+.aform-calendar{
+	width: auto;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.aform-calendar + label{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.aform-content .ui-datepicker-trigger{
+	margin-left: 5px;
+	vertical-align: text-top;
+}
+
+
+
+
+.aform-content input.aform-checkbox,
+.aform-content input.aform-radio{
+	margin-right: 5px;
+	vertical-align:middle;
+}
+.aform-content input.aform-field-option-text{
+	margin-left: 5px;
+	vertical-align:middle;
+}
+
+.aform-content .aform-name-ul li,
+.aform-content .aform-kana-ul li{
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.aform-content input.aform-name,
+.aform-content input.aform-kana{
+	margin-right: 5px;
+}
+
+.aform-content .aform-horizontal-ul li{
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+
+.aform-content ul.aform-payment li{
+	margin-bottom: 0.8em;
+}
+.aform-content ul.aform-payment .aform-payment-description{
+	margin-left: 22px;
+	margin-top: 3px;
+}
+.aform-content ul.aform-payment .aform-payment-description table th{
+	font-weight:normal;
+	padding: 2px 5px 2px 0;
+	vertical-align: top;
+	text-align:left;
+}
+.aform-content ul.aform-payment .aform-payment-description table td{
+	padding: 2px 5px 2px 0;
+}
+
+
+.aform-content span.required{
+	color:#fff;
+	font-size: 82%;
+	font-weight: normal;
+	margin-left: 5px;
+	padding: 2px;
+	display:inline-block;
+	line-height: 1;
+	border-radius: 3px;
+	background:#D92B00;
+	vertical-align: text-top;
+}
+.aform-content .aform-validation,
+.aform-content .aform-input-example{
+	color: #595959;
+	font-size: 90%;
+	font-weight: normal;
+	margin-bottom: 0.3em;
+}
+.aform-content .aform-note{
+	margin-bottom: 1em;
+	padding: 5px 8px;
+	background:#f3f3f3;
+}
+.aform-content .aform-twice-note{
+	display: block;
+}
+.aform-content input.require-twice{
+	margin-top: 3px;
+}
+
+
+.validation-advice {
+	margin: 0;
+	padding: 5px;
+	color: #D92B00;
+	background-color : #FFF;
+}
+
+.aform-content dl.aform-error-list{
+	margin-bottom: 20px;
+}
+.aform-content dl.aform-error-list dt{
+	float: none;
+	width: auto;
+	font-size:120%;
+	margin-bottom: 10px;
+	padding-left:16px;
+	background: url("images/icons/warning_y.gif") 0 50% no-repeat;
+}
+.aform-content dl.aform-error-list dd{
+	padding-left: inherit;
+	margin-left:16px;
+	display:list-item;
+}
+
+.aform-content .submit{
+	margin-top:20px;
+	padding:15px 20px;
+	background: #f3f3f3;
+	text-align:center;
+}
+.aform-content .submit input{
+	margin:0 6px;
+	padding:2px 16px;
+	font-size: 120%;
+}
+
+.aform-content p.powerdby{
+	text-align: right;
+	font-size: 70%;
+	margin: 1em 0;
+}
+.aform-content p.powerdby a{
+
+	color: #fff;
+	padding:0 5px;
+	background:#BAD7E4;
+	text-decoration:none;
+}
+.aform-content p.powerdby a:hover{
+	background:#75AECA;
+}
+
+.aform-content .aform-demo{
+	text-align: center;
+	margin: 2em 0;
+	padding: 5px 10px;
+	border: 1px solid #EE7BA0;
+	background: #FDECF1;
+}
+.aform-content .aform-demo a{
+	color: #903;
+	font-weight:bold;
+	margin: 0 5px;
+}
+
+/*----------------------------------*/
+
+#aform_result{
+	color: #c00;
+	font-weight: bold;
+	font-size: 110%;
+	margin: 15px auto;
+	padding: 10px 15px;
+}
+#aform_result a{
+	margin: 0 1em;
+}
+
+/*----------------------------------
+
+	form-layout
+
+----------------------------------*/
+
+.aform-content dl{
+	border-bottom:1px dotted #ccc;
+	overflow: hidden;
+}
+
+.aform-content dl dt{
+	float: left;
+	width: 30%;
+	position: relative;
+}
+
+.aform-content dl dt .aform-label{
+	padding-right: 2em;
+	display: block;
+}
+.en_us .aform-content dl dt .aform-label{
+	padding-right: 3.5em;
+}
+
+.aform-content dl dt .required{
+	position: absolute;
+	top: 3px;
+	right: 0;
+}
+
+.aform-content dl dd{
+	padding-left: 33%;
+}
+
+.aform-content .aform-name-ul li,
+.aform-content .aform-kana-ul li{
+	display: block;
+	margin-bottom: 5px;
+}
+.aform-content .aform-name-ul li input,
+.aform-content .aform-kana-ul li input{
+	width: 100%;
+}
+
+.ui-datepicker .ui-widget-header{
+	color: inherit;
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.aform-content dl dt{
+		float: none;
+		width: auto;
+		position: relative;
+	}
+
+	.aform-content dl dt .required{
+		position: static;
+		top: auto;
+		right: auto;
+	}
+
+	.aform-content dl dd{
+		padding-left: 0;
+	}
+
+}

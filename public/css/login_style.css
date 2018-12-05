@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* body */
+
+.content {
+     color: #333;
+}
+
+/* navbar */
+.navbar-header img {
+    margin-top: 5px;
+    height: 40px;
+}
+.navbar-nav {
+    float: right !important;
+}
+
+/* cover */
+.cover {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    background: url("/image/cover-bg-01.jpg") center center no-repeat;
+    background-size: cover;
+}
+.cover .cover-inner {
+    height: 100%;
+    margin: auto;
+    display: table;
+}
+.cover .cover-inner .cover-contents {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.cover .cover-inner .cover-contents h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+.cover .btn-success {
+    background-color: #ed486f;
+    border-color: #ed486f;
+}
+
+/* search */
+.search {
+    margin-bottom: 20px;
+}
+
+/* item */
+.item .panel-body {
+    height: 70px;
+}
+.item .panel-heading {
+    height: 250px;
+}
+.item .panel-heading img {
+    height: 100%;
+    max-width: 100%;
+}
+p .item-title {
+    /* 文の行数を2行に保ち、最後に ... を追加するスタイル */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* item */
+.item .panel-body {
+    height: 120px;
+}
+.item .buttons form {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/*mypage*/
+/* users */
+.user-profile .name {
+    margin-bottom: 20px;
+}
+.user-profile .name h1 {
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: bold;
+}
+.user-profile .status ul {
+    margin: 0 auto 10px;
+    padding: 0;
+    display: table;
+}
+.user-profile .status ul li {
+    width: 120px;
+    padding: 5px 0;
+    border-right: 1px solid #ddd;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #777;
+}
+.user-profile .status ul li:last-child {
+    border: none;
+}
+.user-profile .status ul li .status-label {
+    font-size: 12px;
+}
+.user-profile .status ul li .status-value {
+    font-size: 18px;
+}
+
+/* label */
+.event .type {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* 必須項目 */
+label.required::before {
+    color: #ffffff;
+    /* background-color: #5cb85c; */
+    /* background-color: #DE4830; */
+    /* background-color: #EB2142; */
+    background-color: #EE6557;
+
+    font-size: 8px;
+    padding: 5px;
+    content: "必須";
+    font-weight: normal;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+/* faq */
+.faq {
+    margin-bottom: 100px !important;
+}
+.faq_comment {
+    font-size: 16px;
+}
+
+/* 未読レコードの色付け */
+.unread-class {
+    background-color: #fcf8e3 !important;
+}
+
+/* ファイル選択フォーム */
+#photoCover {
+    font-size: 10px;
+}
+.file {
+    font-size: 10px !important;
+}
+.help-block {
+    font-size: 8px;
+}
+.btn-info {
+    font-size: 10px !important;
+    padding: 9px !important;
+}
+
+
+/* アラートワーニング */
+.alert-warning {
+    background-color: #fcf8e3 !important;
+    color: #8a6d3b !important;
+    width: 80%;
+    margin: auto;
+}
+.alert-success {
+    background-color: #dff0d8 !important;
+    color: #3c763d !important;
+    width: 80%;
+    margin: auto;
+}
+strong {
+    font-weight: normal !important;
+}
+
+/* ベージヘッダー */
+.header-border {
+    /* border-bottom: 1px solid #E6E5E1; */
+    margin-bottom: 10px;
+}
+.header-border p {
+    color: #333;
+    /* font-style: italic; */
+}
+.header-border span {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #cccccc;
+    font-family: serif;
+    font-style: italic;
+}
+.header-border li {
+    font-size: 12px;
+}
+.page-header {
+    /* border-bottom: 1px solid #E6E5E1 !important; */
+}
+
+/* ラベル・テープルヘッダー */
+label {
+    color: #333;
+    font-weight: normal !important;
+}
+
+th {
+    font-weight: normal !important;
+}
+.faq_header {
+    padding: 3px 10px;/*文字周りの余白*/
+    /* color: #337ab7; */
+    border-left: solid 5px #337ab7;/*左線（実線 太さ 色）*/
+}
+
+.user-image-sidebar {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* フッターを最下部に */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+  position: relative;
+}
+.footer,
+.push {
+  height: 50px;
+}
+.container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}

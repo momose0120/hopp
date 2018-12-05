@@ -1,0 +1,152 @@
+/* @charset "UTF-8";
+
+body, h1, h2, h3, h4, h5, h6, p, address, blockquote, pre, div, dl, dt, dd, ol, ul, li, th, td, form, fieldset, input, textarea {
+    margin: 0;
+    padding: 0
+}
+
+select {
+    margin: 0
+}
+
+html, body {
+    height: 100%
+}
+
+abbr, acronym {
+    border: 0 none
+}
+
+q:before, q:after {
+    content: ""
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    border: 0 none;
+    vertical-align: bottom
+}
+
+object {
+    outline: none
+}
+
+table {
+    max-width: 100%;
+    border-spacing: 0
+}
+
+*:first-child+html table {
+    border-collapse: collapse
+}
+
+* html table {
+    border-collapse: collapse
+}
+
+caption {
+    text-align: left
+}
+
+th, td {
+    empty-cells: show;
+    text-align: left;
+    vertical-align: top
+}
+
+hr {
+    display: none
+}
+
+fieldset {
+    border: 0 none
+}
+
+label {
+    cursor: default
+}
+
+iframe {
+    overflow: auto;
+    border: 0 none
+}
+
+area {
+    outline: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+    font-style: normal
+}
+
+p, address, blockquote, pre, div, abbr, acronym, dfn, cite, q, code, kbd, samp, var, dl, ol, ul, caption, th {
+    font-weight: 400;
+    font-style: normal
+}
+
+em, strong {
+    font-weight: 700;
+    font-style: normal
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: "ヒラギノ角ゴ Pro W3", Lucida Grande, Hiragino Kaku Gothic Pro, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+body {
+    -webkit-text-size-adjust: 100%
+}
+
+pre, code {
+    font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", MS Gothic, monospace, serif;
+    font-size: 16px
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, .25)
+}
+
+a:link, a:visited {
+    text-decoration: underline;
+    color: #67779f
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    color: #65a6ff
+}
+
+input, select, textarea {
+    color: #333;
+    font-family: "ヒラギノ角ゴ Pro W3", Lucida Grande, Hiragino Kaku Gothic Pro, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif
+}
+
+textarea {
+    padding: 2px 3px;
+    border: 1px solid #b7b7b7
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both
+} */

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+#talent-logo {
+    width: 200px;
+    height: auto;
+}
+
+/* カラー統一 */
+.header_nav .header_nav_entry>a {
+    background: #2bb7ff !important;
+}
+
+html[data-page=top] .sec-hero .hero-ttl .hero-h1 {
+    background: #2bb7ff !important;
+}
+
+html[data-page=top] a.ta-Main-message_contentbox_text3 {
+    background: #2bb7ff !important;
+    color: #fff;
+}
+
+.mask-slide-1.gradation::after {
+    background: #2bb7ff !important;
+}
+
+/* 採用情報の位置を下げる */
+html[data-page=top] .sec-recruit .sec-inner {
+    top: 250px;
+}
+
+/* html[data-page=top] a.ta-Main-message_contentbox_text3{
+    top: 120px;
+} */
+html[data-page=top] .sec-recruit {
+    padding: 120px 0px 120px 0px;
+}
+
+.sec-recruit .Banner {
+    margin-top: 150px;
+}
+
+/* タイトルのカラー変更 */
+.tm-Hero-head_title h1 {
+    color: #2bb7ff !important;
+    -webkit-text-fill-color: initial;
+}
+
+.ta-Hero-head_title h1 {
+    color: #2bb7ff !important;
+    -webkit-text-fill-color: initial;
+}
+
+.tr-Hero-head_title h1 {
+    color: #2bb7ff !important;
+    -webkit-text-fill-color: initial;
+}
+
+.ti-Hero-head_title h1 {
+    color: #2bb7ff !important;
+    -webkit-text-fill-color: initial;
+}
+
+/* ナビ編集 */
+.header_nav {
+    width: 70%;
+}
+
+.footer-main_link1 li:nth-child(7), .header_nav_event {
+    display: initial;
+}
+
+/* トップタイトル */
+.fade-child .hero-h2 span {
+    font-size: 18px;
+}
+
+/* トップ画像切替 */
+.bg-slider {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 社員インタビュー　社員のキャッチフレーズ */
+.fade-child .catch-phras {
+    position: absolute !important;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    color: #fff;
+    background-color: #2bb7ff;
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+}
+
+/* 社員インタビュー　募集要項の背景 */
+.Banner_inner {
+    background-image: initial;
+    background-color: #2bb7ff;
+}
+
+/* よくある質問CSS微調整 */
+.faq_list_tit {
+    background: #2bb7ff;
+}
+
+.faq_list_list {
+    border-bottom: 1px solid #2bb7ff;
+}
+
+.faq_list_list dt:before, .faq_list_list dt:after {
+    background: #2bb7ff;
+}
+
+/* 募集要項 */
+.page_recruit_contents .recruit_table td, .page_recruit_contents .recruit_table th {
+    font-size: 14px;
+}
+
+.page_recruit_contents .recruit_step_table td, .page_recruit_contents .recruit_step_table th {
+    font-size: 14px;
+}
+
+/* 採用の流れ */
+.page_recruit_contents .recruit_step_table tr th {
+    background: #2bb7ff;
+    border-right: initial;
+}
+
+/* フェードイン */
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2s;
+}
+
+.tac-Index_main {
+    position: relative;
+}
+
+/* aboutus */
+.tac-Index_inner {
+    padding-bottom: 0px;
+}
+
+/* recruitinfo 募集要項一覧 */
+#talent-joblist {
+    width: 80%;
+    margin: 0 auto;
+}
