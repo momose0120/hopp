@@ -8,8 +8,8 @@
         <div class="tmc-Hero-head">
             <div class="tmc-Hero-head_inner">
 
-                <img class="tmc-Hero-head_pc message_pagetop_image_size" src="{{ asset("image/messages/$message->main_image") }}">
-                <img class="tmc-Hero-head_sp" src="{{ asset("image/messages/$message->main_image") }}">
+                <img class="tmc-Hero-head_pc message_pagetop_image_size" src="{{ asset("image/messages/$message->main_image") }}" alt="{{ $message->main_image_title }}">
+                <img class="tmc-Hero-head_sp" src="{{ asset("image/messages/$message->main_image") }}" alt="{{ $message->main_image_title }}">
 
                 <div class="tmc-Hero-head_contentbox" data-plx="-60">
                     <!-- <img src="/assets/img/message/ceo/hero-head_label.svg"> -->
@@ -39,7 +39,7 @@
             <li class="tip-Points-main_item">
                 <div class="tip-Points-main_imgbox" data-plx="-60">
                     <div class="tip-Points-main_imgbox_inner is-appear mask-slide-1">
-                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_02") }}">
+                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_02") }}" alt="{{ $message->image_02_title }}">
                     </div>
                 </div>
                 <div class="tip-Points-main_contentbox">
@@ -55,7 +55,7 @@
             <li class="tip-Points-main_item">
                 <div class="tip-Points-main_imgbox" data-plx="-60">
                     <div class="tip-Points-main_imgbox_inner is-appear mask-slide-1">
-                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_03") }}">
+                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_03") }}" alt="{{ $message->image_03_title }}">
                     </div>
                 </div>
                 <div class="tip-Points-main_contentbox">
@@ -69,7 +69,7 @@
             <li class="tip-Points-main_item">
                 <div class="tip-Points-main_imgbox" data-plx="-60">
                     <div class="tip-Points-main_imgbox_inner is-appear mask-slide-1">
-                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_04") }}">
+                        <img class="interview_image_size" src="{{ asset("image/messages/$message->image_04") }}" alt="{{ $message->image_04_title }}">
                     </div>
                 </div>
                 <div class="tip-Points-main_contentbox">
@@ -86,8 +86,8 @@
 
         <div class="tip-Points-banner">
             <div class="is-appear mask-slide-1">
-                <img class="tip-Points-banner_pc interview_image_footer_size" src="{{ asset("image/messages/$message->image_05") }}">
-                <img class="tip-Points-banner_sp" src="{{ asset("image/messages/$message->image_05") }}">
+                <img class="tip-Points-banner_pc interview_image_footer_size" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}>
+                <img class="tip-Points-banner_sp" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}>
             </div>
             <p class="is-appear tip-Points-banner-cap-bottomright fade-up-1 is-delay">「お客様と未来を<span>"想像"</span>し、<br class="tip-Points-banner_tempbr">お客様の未来を<span>"創造"</span>する。」<br class="tip-Points-banner_tempbr">セールス部の理念を体現する</p>
         </div>

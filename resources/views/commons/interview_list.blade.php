@@ -9,7 +9,7 @@
                             {{ $interview->title }}
                         </div>
                         <div class="img-box">
-                            <img src="{{ asset("image/employees/$interview->main_image") }}" width="100%" alt="">
+                            <img src="{{ asset("image/employees/$interview->main_image") }}" width="100%" alt="{{ $interview->main_image_title }}">
                         </div>
                     </div>
                     <div class="detail-box">

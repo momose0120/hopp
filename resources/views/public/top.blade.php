@@ -90,7 +90,7 @@
 							<div class="sec-ttl">
 								<div class="tm-Hero-head_title fade-child">
 									<img src="assets/img/message/hero-head_logo.svg">
-									<h1 class="js-gradient-text-ie11">社員インタビュー</h1>
+									<h1 class="js-gradient-text-ie11">働く仲間を知る</h1>
 								</div>
 							</div>
 						</div>
@@ -104,14 +104,14 @@
 			</div>
 			<div class="message-img-box mask-slide-2 is-appear">
 				<div class="img-1 fade-parent">
-					<div data-plx="80"><div class="fade-child"><img src="assets/img/interview_top_1.jpg" width="100%" alt=""></div></div>
+					<div data-plx="80"><div class="fade-child"><img src="assets/img/interview_top_1.jpg" width="100%" alt="働く仲間"></div></div>
 				</div>
 				<div class="img-2 fade-parent">
-					<div data-plx="-80"><div class="fade-child"><img src="assets/img/interview_top_2.jpg" width="100%" alt=""></div></div>
+					<div data-plx="-80"><div class="fade-child"><img src="assets/img/interview_top_2.jpg" width="100%" alt="働く仲間"></div></div>
 				</div>
 			</div>
 			<div class="intro-btn-box">
-				<div class="fade-up-1 is-appear"><a href="message/index.html" class="ta-Main-message_contentbox_text3">社員インタビュー詳細</a></div>
+				<div class="fade-up-1 is-appear"><a href="message/index.html" class="ta-Main-message_contentbox_text3">働く仲間の詳細</a></div>
 			</div>
 		</section>
 
@@ -137,7 +137,7 @@
 					</div>
 				</div>
 				<div class="message-box-right">
-					<div class="mask-slide-1 is-appear"><img src="assets/img/message_top.jpg" alt=""></div>
+					<div class="mask-slide-1 is-appear"><img src="assets/img/message_top.jpg" alt="代表メッセージ"></div>
 				</div>
 				<div class="aboutus-btn-box">
 					<div class="btn-inner">
@@ -159,7 +159,7 @@
 								<div class="sec-ttl">
 									<div class="ta-Hero-head_title fade-child">
 										<img src="assets/img/culture/hero-head_logo.svg">
-										<h1 class="js-gradient-text-ie11">働く環境について</h1>
+										<h1 class="js-gradient-text-ie11">働く環境を知る</h1>
 									</div>
 								</div>
 							</div>
@@ -172,7 +172,7 @@
 					</div>
 				</div>
 				<div class="message-box-left">
-					<div class="mask-slide-1 is-appear"><img src="assets/img/aboutus_top.jpg" alt="" width="100%;"></div>
+					<div class="mask-slide-1 is-appear"><img src="assets/img/aboutus_top.jpg" alt="働く環境" width="100%;"></div>
 				</div>
 				<div class="event-btn-box">
 					<div class="btn-inner">
@@ -207,7 +207,7 @@
                     </div>
                 </div>
                 <div class="message-box-right">
-                    <div class="mask-slide-1 is-appear"><img src="assets/img/event_top.jpg" alt=""></div>
+                    <div class="mask-slide-1 is-appear"><img src="assets/img/event_top.jpg" alt="イベント"></div>
                 </div>
                 <div class="aboutus-btn-box">
                     <div class="btn-inner">
@@ -242,7 +242,7 @@
                     </div>
                 </div>
                 <div class="message-box-left">
-                    <div class="mask-slide-1 is-appear"><img src="assets/img/faq_top.jpg" alt="" width="100%;"></div>
+                    <div class="mask-slide-1 is-appear"><img src="assets/img/faq_top.jpg" alt="よくある質問" width="100%;"></div>
                 </div>
                 <div class="event-btn-box">
                     <div class="btn-inner">

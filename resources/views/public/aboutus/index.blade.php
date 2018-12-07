@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="tac-Hero-head_img fade-child">
-                    <img src="/assets/img/aboutus/company/aboutus_head.jpg" width="720px">
+                    <img src="/assets/img/aboutus/company/aboutus_head.jpg" width="720px" alt="働く環境">
                 </div>
 
             </div>
@@ -41,17 +41,17 @@
                 </div>
                 <div class="welfare_workplace_body">
                     <ul class="welfare_workplace_officepics is-appear fade-up-2">
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_01.gif" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_02.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_03.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_04.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_05.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_06.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_07.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_08.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_09.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_10.jpg" alt=""></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_11.jpg" alt=""></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_01.gif" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_02.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_03.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_04.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_05.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_06.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_07.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_08.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_09.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_10.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_11.jpg" alt="保育所風景"></li>
                     </ul>
                 </div>
 
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="message-box-right">
-                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/concepts/$concept->main_image") }}" alt=""></div>
+                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/concepts/$concept->main_image") }}" alt="{{ $concept->main_image_title }}"></div>
                     </div>
                     <!-- <div class="aboutus-btn-box">
                         <div class="btn-inner">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="message-box-left">
-                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/concepts/$concept->main_image") }}" alt="" width="100%;"></div>
+                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/concepts/$concept->main_image") }}" alt="{{ $concept->main_image_title }}" width="100%;"></div>
                     </div>
                     <!-- <div class="event-btn-box">
                         <div class="btn-inner">
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="message-box-left">
-                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/tenants/$tenant->main_image") }}" alt="{{ $tenant->title }} width="100%;"></div>
+                        <div class="mask-slide-1 is-appear"><img src="{{ asset("image/tenants/$tenant->main_image") }}" alt="{{ $tenant->main_image_title }}" width="100%;"></div>
                     </div>
                     <!-- <div class="event-btn-box">
                         <div class="btn-inner">

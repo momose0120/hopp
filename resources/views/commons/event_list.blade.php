@@ -9,7 +9,7 @@
                             {{ $event->title }}
                         </div>
                         <div class="img-box">
-                            <img src="{{ asset("image/events/$event->main_image") }}" width="100%" alt="">
+                            <img src="{{ asset("image/events/$event->main_image") }}" width="100%" alt="{{ $event->main_image_title }}">
                         </div>
                     </div>
                     <div class="detail-box">

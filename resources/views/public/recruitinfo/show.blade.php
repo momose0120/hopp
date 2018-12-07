@@ -10,8 +10,8 @@
             <div class="ti-Hero-head_title fade-child">
                 <h1 class="js-gradient-text-ie11 fade-child">採用情報詳細</h1>
             </div>
-            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}">
-            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}">
+            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
+            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
         </div>
 
         <div class="ti-Hero-detail" id="js-hero-detail" data-plx="60">
@@ -38,9 +38,9 @@
         </div>
         <div class="page_recruit_contents fadein">
             <h2><span>保育所風景</span></h2>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_01") }}" alt=""/></p>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_02") }}" alt=""/></p>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_03") }}" alt=""/></p>
+            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_01") }}" alt="{{ $recruit->image_01_title }}"/></p>
+            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_02") }}" alt="{{ $recruit->image_02_title }}"/></p>
+            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_03") }}" alt="{{ $recruit->image_03_title }}"/></p>
         </div>
 
     		<div class="page_recruit_contents fadein">

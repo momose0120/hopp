@@ -9,8 +9,8 @@
             <div class="ti-Hero-head_title fade-child">
                 <h1 class="js-gradient-text-ie11 fade-child">採用情報</h1>
             </div>
-            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg">
-            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg">
+            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="採用情報">
+            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="採用情報">
         </div>
 
         <div class="ti-Hero-detail" id="js-hero-detail" data-plx="60">

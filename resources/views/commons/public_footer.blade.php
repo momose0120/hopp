@@ -8,7 +8,7 @@
             <a class="footer-head_mask" href="{{ route('interview.index') }}">
                 <div class="footer-head_inner">
                     <h4>INTERVIEW</h4>
-                    <p>社員インタビュー</p>
+                    <p>働く仲間を知る</p>
                 </div>
             </a>
             <img src="/assets/img/footer/interview_footer.jpg">
@@ -26,7 +26,7 @@
             <a class="footer-head_mask" href="{{ route('aboutus.index') }}">
                 <div class="footer-head_inner">
                     <h4>ABOUT US</h4>
-                    <p>働く環境について</p>
+                    <p>働く環境を知る</p>
                 </div>
             </a>
             <img src="/assets/img/footer/aboutus_footer.jpg">

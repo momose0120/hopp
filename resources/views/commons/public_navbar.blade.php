@@ -9,7 +9,7 @@
 							<a href="{{ route('interview.index') }}" id="js-menu-current-interview">
 								<img class="header_navimg" src="/assets/img/common/header-sp-menu_interview.jpg">
 								<p class="js-gradient-text-ie11">INTERVIEW</p>
-								<p>社員インタビュー</p>
+								<p>働く仲間を知る</p>
 							</a>
 						</li>
 						<li class="header_nav_message">
@@ -23,7 +23,7 @@
 							<a href="{{ route('aboutus.index') }}" id="js-menu-current-aboutus">
 								<img class="header_navimg" src="/assets/img/common/header-sp-menu_aboutus.jpg">
 								<p class="js-gradient-text-ie11">ABOUT US</p>
-								<p>働く環境について</p>
+								<p>働く環境を知る</p>
 							</a>
 						</li>
 						<li class="header_nav_event">
