@@ -357,6 +357,25 @@ color: '#fff'
     text-overflow: ellipsis;
 }
 
+.small_title {
+    font-size: 14px;
+    color: #cccccc;
+    /* font-style: italic; */
+}
+
+.inputlength_css {
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 10px;
+}
+
+/* スマホの場合項目を削除する */
+@media screen and (max-width: 768px){
+    .sp_display_none {
+        display: none;
+    }
+}
+
 
 /* フッターを最下部に */
 /* html, body {

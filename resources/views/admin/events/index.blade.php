@@ -79,7 +79,5 @@
         });
     });
 </script>
-<a class="help" title="「保存」すると削除はされませんが、全件表示に表示されなくなります。
-<br />また、「保存」後は「進捗」が「対応済」に変更されます。<br />「非保存」すると全件表示に表示されるようになります。"><i class="glyphicon glyphicon glyphicon-question-sign"></i>help</a>
 
 @endsection

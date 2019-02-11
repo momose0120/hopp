@@ -8,6 +8,10 @@ class Contact extends Model
 {
     protected $table = 'contacts';
     protected $fillable = ['name', 'email', 'tel', 'gender', 'message', 'age', 'recruit_id', 'progress', 'result', 'memo'];
+    protected $casts = [
+        'progress' => 'integer',
+        'result' => 'integer'
+    ];
 
     function isUnread(){
         return $this->progress === 0 || $this->progress === 1;

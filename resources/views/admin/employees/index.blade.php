@@ -20,7 +20,7 @@
     @if (count($employees) > 0)
     <?php $i = 1; ?>
         <table class="table table-striped">
-            <thead>
+            <thead class="sp_display_none">
                 <tr>
                     <th>#</th>
                     <th>メイン画像</th>
@@ -33,23 +33,23 @@
         <tbody>
             @foreach ($employees as $employee)
                 <tr>
-                    <th>{{ $i }}</th>
+                    <th class="sp_display_none">{{ $i }}</th>
                     <td><img src="{{ asset("image/employees/$employee->main_image") }}"　 width="80" height="80" class="img-rounded image_fit_cover" alt="{{ $employee->main_image_title }}"></td>
                     <td>{{ $employee->name }}</td>
-                    <td>{{ $employee->type }}</td>
+                    <td class="sp_display_none">{{ $employee->type }}</td>
                     <?php if ($employee->status === 0){ $status = '公開'; } else { $status = '非公開'; }?>
-                    <td>{{ $status }}</td>
+                    <td class="sp_display_none">{{ $status }}</td>
                     <?php
                         $date = $employee->updated_at;
                         $date = date('Y/m/d', strtotime($date));
                      ?>
-                    <td>{{ $date }}</td>
+                    <td class="sp_display_none">{{ $date }}</td>
                     <td>
                     {!! Form::open(['route' => ['admin_employees.edit', $employee->id], 'method' => 'get']) !!}
                         {!! Form::submit('編集', ['class' => 'btn btn-success btn-block btn-sm']) !!}
                     {!! Form::close() !!}
                     </td>
-                    <td>
+                    <td class="sp_display_none">
                     {!! Form::open(['route' => ['admin_employees.destroy', $employee->id], 'method' => 'delete']) !!}
                         {!! Form::submit('削除', ['class' => 'btn btn-danger btn-block btn-sm']) !!}
                     {!! Form::close() !!}

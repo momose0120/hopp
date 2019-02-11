@@ -80,7 +80,6 @@ class AdminController extends Controller
                     ];
                 }
             }
-
             return view('admin.top', ['title' => $title, 'small' => $small, 'contacts' => $contacts, 'contact_result' => $contact_result, 'contact_tenant' => $maps, 'contact_age' => $ages]);
         } else{
             return view('auth.login');

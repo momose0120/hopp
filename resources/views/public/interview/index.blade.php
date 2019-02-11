@@ -9,8 +9,8 @@
             <div class="ti-Hero-head_title fade-child">
                 <h1 class="js-gradient-text-ie11 fade-child">働く仲間を知る</h1>
             </div>
-            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="働く仲間">
-            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="働く仲間">
+            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/interview_header.jpg" alt="働く仲間">
+            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/interview_header.jpg" alt="働く仲間">
         </div>
 
         <div class="ti-Hero-detail" id="js-hero-detail" data-plx="60">

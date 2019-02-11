@@ -36,7 +36,7 @@ class EventinfosController extends Controller
         $this->validate($request, [
             'name' => 'required|max:30',
             'name_ja' => 'required|max:30',
-            'email' => 'required|email|max:50',
+            'email' => 'required|email|max:70',
             'mobile_tel' => 'required|digits:11',
             'message' => 'max:100'
         ]);

@@ -20,7 +20,7 @@
     @if (count($concepts) > 0)
     <?php $i = 1; ?>
         <table class="table table-striped">
-            <thead>
+            <thead class="sp_display_none">
                 <tr>
                     <th>#</th>
                     <th>メイン画像</th>
@@ -31,20 +31,20 @@
         <tbody>
             @foreach ($concepts as $concept)
                 <tr>
-                    <th>{{ $i }}</th>
+                    <th class="sp_display_none">{{ $i }}</th>
                     <td><img src="{{ asset("image/concepts/$concept->main_image") }}"　 width="80" height="80" class="img-rounded image_fit_cover" alt="{{ $concept->main_image_title }}"></td>
                     <td>{{ $concept->title }}</td>
                     <?php
                         $date = $concept->updated_at;
                         $date = date('Y/m/d', strtotime($date));
                      ?>
-                    <td>{{ $date }}</td>
+                    <td class="sp_display_none">{{ $date }}</td>
                     <td>
                     {!! Form::open(['route' => ['admin_concepts.edit', $concept->id], 'method' => 'get']) !!}
                         {!! Form::submit('編集', ['class' => 'btn btn-success btn-block btn-sm']) !!}
                     {!! Form::close() !!}
                     </td>
-                    <td>
+                    <td class="sp_display_none">
                     {!! Form::open(['route' => ['admin_concepts.destroy', $concept->id], 'method' => 'delete']) !!}
                         {!! Form::submit('削除', ['class' => 'btn btn-danger btn-block btn-sm']) !!}
                     {!! Form::close() !!}

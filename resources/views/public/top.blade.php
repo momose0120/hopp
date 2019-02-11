@@ -12,23 +12,23 @@
 							<div class="fade-parent">
 								<div class="fade-child">
 									<p class="h1-outer">
-										<span class="h1-inner">小さな冒険、</span>
+										<span class="h1-inner">小さな冒険、はじめよう。</span>
 									</p>
 								</div>
 							</div>
-							<div class="fade-parent">
+							<!-- <div class="fade-parent">
 								<div class="fade-child">
 									<p class="h1-outer">
-										<span class="h1-inner">はじめよう。</span>
+										<span class="h1-inner">新たな世界へ</span>
 									</p>
 								</div>
-							</div>
+							</div> -->
 						</h1>
 					</div>
 					<div class="fade-child">
 						<h2 class="hero-h2">
-                            <span>NURSERY SCHOOL</span>
-							<span>RECRUITMENT</span>
+                            <span>保育士採用ホームページ</span>
+							<span>Hopp！</span>
 						</h2>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 						<div class="fade-child">
 							<div class="sec-ttl">
 								<div class="tm-Hero-head_title fade-child">
-									<img src="assets/img/message/hero-head_logo.svg">
+									<!-- <img src="assets/img/message/hero-head_logo.svg"> -->
 									<h1 class="js-gradient-text-ie11">働く仲間を知る</h1>
 								</div>
 							</div>
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 			<div class="intro-btn-box">
-				<div class="fade-up-1 is-appear"><a href="message/index.html" class="ta-Main-message_contentbox_text3">働く仲間の詳細</a></div>
+				<div class="fade-up-1 is-appear"><a href="{{ route('interview.index') }}" class="ta-Main-message_contentbox_text3">働く仲間の詳細</a></div>
 			</div>
 		</section>
 
@@ -123,7 +123,7 @@
 							<div class="fade-child">
 								<div class="sec-ttl">
 									<div class="ta-Hero-head_title fade-child">
-										<img src="assets/img/aboutus/hero-head_logo.svg">
+										<!-- <img src="assets/img/aboutus/hero-head_logo.svg"> -->
 										<h1 class="js-gradient-text-ie11">トップメッセージ</h1>
 									</div>
 								</div>
@@ -141,7 +141,7 @@
 				</div>
 				<div class="aboutus-btn-box">
 					<div class="btn-inner">
-						<div class="fade-up-1 is-appear"><a href="message/index.html" class="ta-Main-message_contentbox_text3 grade_hover">トップメッセージ詳細</a></div>
+						<div class="fade-up-1 is-appear"><a href="{{ route('message.index') }}" class="ta-Main-message_contentbox_text3 grade_hover">トップメッセージ詳細</a></div>
 					</div>
 				</div>
 				<div class="bg-pentagon pentagon-1"></div><!-- data-plx="-50" -->
@@ -158,7 +158,7 @@
 							<div class="fade-child">
 								<div class="sec-ttl">
 									<div class="ta-Hero-head_title fade-child">
-										<img src="assets/img/culture/hero-head_logo.svg">
+										<!-- <img src="assets/img/culture/hero-head_logo.svg"> -->
 										<h1 class="js-gradient-text-ie11">働く環境を知る</h1>
 									</div>
 								</div>
@@ -176,7 +176,7 @@
 				</div>
 				<div class="event-btn-box">
 					<div class="btn-inner">
-						<div class="fade-up-1 is-appear"><a href="culture/index.html" class="ta-Main-message_contentbox_text3 grade_hover">働く環境詳細</a></div>
+						<div class="fade-up-1 is-appear"><a href="{{ route('aboutus.index') }}" class="ta-Main-message_contentbox_text3 grade_hover">働く環境詳細</a></div>
 					</div>
 				</div>
 				<div class="bg-pentagon pentagon-1"></div>
@@ -193,7 +193,7 @@
                             <div class="fade-child">
                                 <div class="sec-ttl">
                                     <div class="ta-Hero-head_title fade-child">
-                                        <img src="assets/img/aboutus/hero-head_logo.svg">
+                                        <!-- <img src="assets/img/aboutus/hero-head_logo.svg"> -->
                                         <h1 class="js-gradient-text-ie11">イベント</h1>
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="aboutus-btn-box">
                     <div class="btn-inner">
-                        <div class="fade-up-1 is-appear"><a href="message/index.html" class="ta-Main-message_contentbox_text3 grade_hover">イベント一覧</a></div>
+                        <div class="fade-up-1 is-appear"><a href="{{ route('eventinfo.index') }}" class="ta-Main-message_contentbox_text3 grade_hover">イベント一覧</a></div>
                     </div>
                 </div>
                 <div class="bg-pentagon pentagon-1"></div><!-- data-plx="-50" -->
@@ -228,7 +228,7 @@
                             <div class="fade-child">
                                 <div class="sec-ttl">
                                     <div class="ta-Hero-head_title fade-child">
-                                        <img src="assets/img/culture/hero-head_logo.svg">
+                                        <!-- <img src="assets/img/culture/hero-head_logo.svg"> -->
                                         <h1 class="js-gradient-text-ie11">FAQ　よくある質問</h1>
                                     </div>
                                 </div>
@@ -246,7 +246,7 @@
                 </div>
                 <div class="event-btn-box">
                     <div class="btn-inner">
-                        <div class="fade-up-1 is-appear"><a href="culture/index.html" class="ta-Main-message_contentbox_text3 grade_hover">よくある質問一覧</a></div>
+                        <div class="fade-up-1 is-appear"><a href="{{ route('faqinfo.index') }}" class="ta-Main-message_contentbox_text3 grade_hover">よくある質問一覧</a></div>
                     </div>
                 </div>
                 <div class="bg-pentagon pentagon-1"></div>
@@ -634,7 +634,7 @@
 					<div class="fade-child">
 						<div class="sec-ttl">
 							<div class="tr-Hero-head_title fade-child">
-								<img src="assets/img/recruit/hero-head_logo.svg">
+								<!-- <img src="assets/img/recruit/hero-head_logo.svg"> -->
 								<h1 class="js-gradient-text-ie11">採用情報</h1>
 							</div>
 						</div>

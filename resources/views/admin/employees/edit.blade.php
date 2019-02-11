@@ -1,6 +1,73 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- 入力文字数のカウント -->
+<script>
+    var $limit_500 = 500;
+    var $limit_300 = 300;
+    var $limit_50 = 50;
+    var $limit_30 = 30;
+    var $count;
+
+    $(function() {
+        document.getElementById("inputlength_title").innerHTML = "入力可能" + $limit_50 + "文字";
+    });
+    function ShowLength_title( str ) {
+        $count = $limit_50 - str.length
+        document.getElementById("inputlength_title").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_profile").innerHTML = "入力可能" + $limit_300 + "文字";
+    });
+    function ShowLength_profile( str ) {
+        $count = $limit_300 - str.length
+        document.getElementById("inputlength_profile").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_title_01").innerHTML = "入力可能" + $limit_50 + "文字";
+    });
+    function ShowLength_title_01( str ) {
+        $count = $limit_50 - str.length
+        document.getElementById("inputlength_title_01").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_content_01").innerHTML = "入力可能" + $limit_300 + "文字";
+    });
+    function ShowLength_content_01( str ) {
+        $count = $limit_300 - str.length
+        document.getElementById("inputlength_content_01").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_title_02").innerHTML = "入力可能" + $limit_50 + "文字";
+    });
+    function ShowLength_title_02( str ) {
+        $count = $limit_50 - str.length
+        document.getElementById("inputlength_title_02").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_content_02").innerHTML = "入力可能" + $limit_300 + "文字";
+    });
+    function ShowLength_content_02( str ) {
+        $count = $limit_300 - str.length
+        document.getElementById("inputlength_content_02").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_title_03").innerHTML = "入力可能" + $limit_50 + "文字";
+    });
+    function ShowLength_title_03( str ) {
+        $count = $limit_50 - str.length
+        document.getElementById("inputlength_title_03").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_content_03").innerHTML = "入力可能" + $limit_300 + "文字";
+    });
+    function ShowLength_content_03( str ) {
+        $count = $limit_300 - str.length
+        document.getElementById("inputlength_content_03").innerHTML = "残り" + $count + "文字";
+    }
+
+</script>
+
 <ul class="list-inline">
     <li><a href="{{ route('admin_employees.index') }}"><i class="glyphicon glyphicon-hand-right"></i>働く仲間一覧はこちら</a></li>
 </ul>
@@ -42,35 +109,43 @@
             </div>
                 <div class="form-group">
                     {!! Form::label('title', 'タイトル', [ 'class' => 'required', ]) !!}
-                    {!! Form::text('title', $employee->title,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_title" class="inputlength_css">0文字</span>
+                    {!! Form::text('title', $employee->title,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_title(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('profile', 'プロフィール') !!}
-                    {!! Form::textarea('profile', $employee->profile,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_profile" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('profile', $employee->profile,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_profile(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('title_01', 'インタビュータイトル１') !!}
-                    {!! Form::text('title_01', $employee->title_01,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_title_01" class="inputlength_css">0文字</span>
+                    {!! Form::text('title_01', $employee->title_01,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_title_01(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content_01', 'インタビュー内容１') !!}
-                    {!! Form::textarea('content_01', $employee->content_01,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_content_01" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('content_01', $employee->content_01,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_content_01(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('title_02', 'インタビュータイトル２') !!}
-                    {!! Form::text('title_02', $employee->title_02,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_title_02" class="inputlength_css">0文字</span>
+                    {!! Form::text('title_02', $employee->title_02,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_title_02(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content_02', 'インタビュー内容２') !!}
-                    {!! Form::textarea('content_02', $employee->content_02,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_content_02" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('content_02', $employee->content_02,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_content_02(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('title_03', 'インタビュータイトル３') !!}
-                    {!! Form::text('title_03', $employee->title_03,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_title_03" class="inputlength_css">0文字</span>
+                    {!! Form::text('title_03', $employee->title_03,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_title_03(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('content_03', 'インタビュー内容３') !!}
-                    {!! Form::textarea('content_03', $employee->content_03,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_content_03" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('content_03', $employee->content_03,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_content_03(value);']) !!}
                 </div>
 
                 <!--画像アップロード装飾-->
@@ -200,7 +275,7 @@
                         $('#photoCover_05').val($(this).val());
                       });
                     </script>
-                    <p class="help-block">ファイルサイズは2MBまでとなります。</p>
+                    <p class="help-block">ファイルサイズは1MBまでとなります。</p>
                 </div>
                 <!-- <div class="col-md-7">
                     <p>　</p>

@@ -9,8 +9,8 @@
             <div class="ti-Hero-head_title fade-child">
                 <h1 class="js-gradient-text-ie11 fade-child">よくある質問</h1>
             </div>
-            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="よくある質問">
-            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/interview/interview_header.jpg" alt="よくある質問">
+            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="/assets/img/faq_header.jpg" alt="よくある質問">
+            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="/assets/img/faq_header.jpg" alt="よくある質問">
         </div>
 
         <div class="ti-Hero-detail" id="js-hero-detail" data-plx="60">
@@ -34,7 +34,6 @@
                                     @if ($faq->category->sort === $i)
 
                         <section class="faq_list">
-
                         @if ($category !== $faq->category->category )
                             <h3 class="faq_list_tit">{{ $faq->category->category }}</h3>
                         @endif
@@ -44,6 +43,7 @@
                             </dl>
                         </section>
                         @endif
+                        <?php $category = $faq->category->category ; ?>
                     @endforeach
                 @endfor
             @endif

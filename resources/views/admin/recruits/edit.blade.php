@@ -1,6 +1,37 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- 入力文字数のカウント -->
+<script>
+    var $limit_500 = 500;
+    var $limit_250 = 250;
+    var $limit_50 = 50;
+    var $limit_30 = 30;
+    var $count;
+
+    $(function() {
+        document.getElementById("inputlength_talent").innerHTML = "入力可能" + $limit_500 + "文字";
+    });
+    function ShowLength_talent( str ) {
+        $count = $limit_500 - str.length
+        document.getElementById("inputlength_talent").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_job").innerHTML = "入力可能" + $limit_500 + "文字";
+    });
+    function ShowLength_job( str ) {
+        $count = $limit_500 - str.length
+        document.getElementById("inputlength_job").innerHTML = "残り" + $count + "文字";
+    }
+    $(function() {
+        document.getElementById("inputlength_title").innerHTML = "入力可能" + $limit_30 + "文字";
+    });
+    function ShowLength_title( str ) {
+        $count = $limit_30 - str.length
+        document.getElementById("inputlength_title").innerHTML = "残り" + $count + "文字";
+    }
+</script>
+
 <ul class="list-inline">
     <li><a href="{{ route('admin_recruits.index') }}"><i class="glyphicon glyphicon-hand-right"></i>募集要項一覧はこちら</a></li>
 </ul>
@@ -32,7 +63,8 @@
                 <div class="form-group col-md-9">
                     {!! Form::label('title', '職種タイトル', [ 'class' => 'required', ]) !!}
                     <a class="help reference" title="この項目を求職者は最も確認</br>魅力的な職種タイトルが必要</br>16文字以下を推奨"><i class="glyphicon glyphicon glyphicon-exclamation-sign"></i>tips</a>
-                    {!! Form::text('title', $recruit->title,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_title" class="inputlength_css">0文字</span>
+                    {!! Form::text('title', $recruit->title,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_title(value);']) !!}
                 </div>
             </div>
                 <div class="form-group form-inline">
@@ -59,12 +91,14 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('talent', '人材イメージ') !!}
-                    {!! Form::textarea('talent', $recruit->talent,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_talent" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('talent', $recruit->talent,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_talent(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('job', '仕事内容') !!}
                     <a target="_blank" class="reference" href="https://support.hopp-recruit.jp/ja/article/%E4%BB%95%E4%BA%8B%E5%86%85%E5%AE%B9%E8%A8%98%E8%BC%89%E3%81%AE%E3%82%B3%E3%83%84"><i class="glyphicon glyphicon-book"></i>教えてHopp！</a>
-                    {!! Form::textarea('job', $recruit->job,  ['class' => 'form-control']) !!}
+                    <span id="inputlength_job" class="inputlength_css">0文字</span>
+                    {!! Form::textarea('job', $recruit->job,  ['class' => 'form-control', 'onkeyup' => 'ShowLength_job(value);']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('salary', '給与・時給') !!}

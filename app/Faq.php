@@ -8,6 +8,10 @@ class Faq extends Model
 {
     protected $table = 'faq';
     protected $fillable = ['question', 'answer', 'status', 'category_id'];
+    protected $casts = [
+        'status' => 'integer'
+    ];
+
 
     public function category(){
         return $this->belongsTo(Category::class);

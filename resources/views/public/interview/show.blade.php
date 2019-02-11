@@ -12,7 +12,7 @@
                     <p class="tip-Hero-head_nameeng fade-child">{{ $interview->name_en }}</p>
                     <h1 class="tip-Hero-head_name fade-child" style="letter-spacing: 0em">{{ $interview->name }}</h1>
                     <div class="tip-Hero-head_textbg fade-child">
-                        <p class="tip-Hero-head_text js-gradient-text-ie11 fade-child"><span>「お客様と未来を"想像"し、</span><br><span>お客様の未来を''創造"する。」</span><br><span>セールス部の理念を体現する</span></p>
+                        <p class="tip-Hero-head_text js-gradient-text-ie11 fade-child"><span>{{ $interview->title }}</span></p>
                     </div>
                 </div>
                 <img src="{{ asset("image/employees/$interview->main_image") }}" class="fade-child pagetop_image_size">
@@ -34,7 +34,7 @@
                 <!-- <div class="tip-Hero-detail_info fade-child">
                     <p>2014年入社</p>
                 </div> -->
-                <p class="tip-Hero-detail_profile fade-child">{{ $interview->profile }}</p>
+                <p class="tip-Hero-detail_profile fade-child">{!! nl2br(e($interview->profile)) !!}</p>
 
             </div>
 
@@ -61,7 +61,7 @@
                             <!-- <img src="/main/assets/img/interview/proper-cooke/points-main_topic01.svg" class="fade-child"> -->
                         </div>
                         <h2 class="fade-child">{{ $interview->title_01 }}</h2>
-                        <p class="fade-child">{{ $interview->content_01 }}</p>
+                        <p class="fade-child">{!! nl2br(e($interview->content_01)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -75,7 +75,7 @@
                     <div class="tip-Points-main_contentbox_inner is-appear fade-up-2">
                         <!-- <img src="/main/assets/img/interview/proper-cooke/points-main_topic02.svg" class="fade-child"> -->
                         <h2 class="fade-child">{{ $interview->title_02 }}</h2>
-                        <p class="fade-child">{{ $interview->content_02 }}</p>
+                        <p class="fade-child">{!! nl2br(e($interview->content_02)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -89,7 +89,7 @@
                     <div class="tip-Points-main_contentbox_inner is-appear fade-up-2">
                         <!-- <img src="/main/assets/img/interview/proper-cooke/points-main_topic03.svg" class="fade-child"> -->
                         <h2 class="fade-child">{{ $interview->title_03 }}</h2>
-                        <p class="fade-child">{{ $interview->content_03 }}</p>
+                        <p class="fade-child">{!! nl2br(e($interview->content_03)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -102,7 +102,7 @@
                 <img class="tip-Points-banner_pc interview_image_footer_size" src="{{ asset("image/employees/$interview->image_05") }}">
                 <img class="tip-Points-banner_sp" src="{{ asset("image/employees/$interview->image_05") }}">
             </div>
-            <p class="is-appear tip-Points-banner-cap-bottomright fade-up-1 is-delay">「お客様と未来を<span>"想像"</span>し、<br class="tip-Points-banner_tempbr">お客様の未来を<span>"創造"</span>する。」<br class="tip-Points-banner_tempbr">セールス部の理念を体現する</p>
+            <p class="is-appear tip-Points-banner-cap-bottomright fade-up-1 is-delay">{{ $interview->title }}</p>
         </div>
     </section>
 
@@ -118,10 +118,10 @@
         @include('commons.interview_list')
 
         <div class="tip-Propers_button">
-            <a href="../index.html">
+            <a href="{{ route('interview.index') }}">
                 <img src="/assets/img/interview/proper-cooke/propers_btn.svg">
             </a>
-            <p>社員一覧</p>
+            <p>働く仲間一覧</p>
         </div>
     </section>
 

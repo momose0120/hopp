@@ -33,9 +33,9 @@ class ConceptsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'title' => 'required|max:30',
+            'title' => 'required|max:50',
             'main_image' => 'image|max:2000',
-            'content_concept' => 'max:250',
+            'content_concept' => 'max:300',
         ]);
 
         $concept = new Concept;
@@ -72,9 +72,9 @@ class ConceptsController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'title' => 'required|max:30',
+            'title' => 'required|max:50',
             'main_image' => 'image|max:2000',
-            'content_concept' => 'max:250',
+            'content_concept' => 'max:300',
         ]);
         $concept = concept::find($id);
         $concept->title = $request->title;

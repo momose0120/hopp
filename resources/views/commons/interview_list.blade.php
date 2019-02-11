@@ -4,7 +4,7 @@
         @foreach ($interviews as $interview)
             <li class="fade-parent">
                 <a href="{{ route('interview.show', $interview->id) }}">
-                    <div class="fade-child">
+                    <div class="fade-child list_width_interview_event">
                         <div class="catch-phras">
                             {{ $interview->title }}
                         </div>

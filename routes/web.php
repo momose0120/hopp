@@ -46,7 +46,7 @@ Route::get('recruitinfo', 'RecruitinfosController@index')->name('recruitinfo.ind
 Route::get('recruitinfo/{id}', 'RecruitinfosController@show')->name('recruitinfo.show');
 
 // Faq
-Route::get('faqinfo', 'faqinfosController@index')->name('faqinfo.index');
+Route::get('faqinfo', 'FaqinfosController@index')->name('faqinfo.index');
 
 
 // 募集要項

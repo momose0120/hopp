@@ -8553,9 +8553,9 @@
                 value: function() {
                     var e = this;
                     this.$footermainLogo = document.getElementById("js-footer-main_logo"), this.window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0), window.addEventListener("load", function() {
-                        e.window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0), e.window_width < 750 ? e.$footermainLogo.childNodes[1].src = "/assets/img/common/talent-logo.png" : e.$footermainLogo.childNodes[1].src = "/assets/img/common/talent-logo.png"
+                        e.window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0), e.window_width < 750 ? e.$footermainLogo.childNodes[1].src = "/assets/img/common/hopp-logo.gif" : e.$footermainLogo.childNodes[1].src = "/assets/img/common/hopp-logo.gif"
                     }), window.addEventListener("resize", function() {
-                        e.window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0), e.window_width < 750 ? e.$footermainLogo.childNodes[1].src = "/assets/img/common/talent-logo.png" : e.$footermainLogo.childNodes[1].src = "/assets/img/common/talent-logo.png"
+                        e.window_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0), e.window_width < 750 ? e.$footermainLogo.childNodes[1].src = "/assets/img/common/hopp-logo.gif" : e.$footermainLogo.childNodes[1].src = "/assets/img/common/hopp-logo.gif"
                     })
                     // フッターのロゴを入れ替えるために、srcのファイルを変更　　元ソース：/assets/img/common/footer-main_logo_new.svg
                 }

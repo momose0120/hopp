@@ -8,6 +8,10 @@ class Category extends Model
 {
     protected $table = 'categorys';
     protected $fillable = ['category', 'sort'];
+    protected $casts = [
+        'sort' => 'integer'
+    ];
+
 
     public function faq(){
         return $this->hasMany(Faq::class);

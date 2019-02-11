@@ -1,6 +1,9 @@
 @extends('layouts.public_app')
 
 @section('content')
+<!-- スライダー　リクルートページ -->
+<link href="/js_slick/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="/js_slick/slick/slick.css" rel="stylesheet" type="text/css">
 
 <main role="main">
 
@@ -11,6 +14,8 @@
                 <h1 class="js-gradient-text-ie11 fade-child">採用情報詳細</h1>
             </div>
             <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
+            <img class="ti-Hero-head_pc js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
+            <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
             <img class="ti-Hero-head_sp js-gradient-text-ie11 fade-child" src="{{ asset("image/recruits/$recruit->main_image") }}" alt="main_image_title">
         </div>
 
@@ -29,38 +34,44 @@
             <p class="recruit_contents">{{ $recruit->title }}</p>
         </div>
         <div class="page_recruit_contents fadein">
-            <h2><span>仕事内容</span></h2>
-            <p class="recruit_contents">{{ $recruit->job }}</p>
+            <h2><span>求める人材</span></h2>
+            <p class="recruit_contents">{!! nl2br(e($recruit->talent)) !!}</p>
         </div>
         <div class="page_recruit_contents fadein">
-            <h2><span>求める人材</span></h2>
-            <p class="recruit_contents">{{ $recruit->talent }}</p>
+            <h2><span>仕事内容</span></h2>
+            <p class="recruit_contents">{!! nl2br(e($recruit->job)) !!}</p>
         </div>
         <div class="page_recruit_contents fadein">
             <h2><span>保育所風景</span></h2>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_01") }}" alt="{{ $recruit->image_01_title }}"/></p>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_02") }}" alt="{{ $recruit->image_02_title }}"/></p>
-            <p class="recruit_contents"><img src="{{ asset("image/recruits/$recruit->image_03") }}" alt="{{ $recruit->image_03_title }}"/></p>
+            <ul class="recruit_image_slick">
+                <li class="recruit_contents recruit_image_slick_contents"><img src="{{ asset("image/recruits/$recruit->image_01") }}" alt="{{ $recruit->image_01_title }}"/></li>
+                <li class="recruit_contents recruit_image_slick_contents"><img src="{{ asset("image/recruits/$recruit->image_02") }}" alt="{{ $recruit->image_02_title }}"/></li>
+                <li class="recruit_contents recruit_image_slick_contents"><img src="{{ asset("image/recruits/$recruit->image_03") }}" alt="{{ $recruit->image_03_title }}"/></li>
+            </ul>
         </div>
 
     		<div class="page_recruit_contents fadein">
     			<h2><span>募集要項</span></h2>
     			<table class="recruit_table">
                     <tr>
+                        <th>勤務期間</th>
+                        <td>{!! nl2br(e($recruit->work_period)) !!}</td>
+                    </tr>
+                    <tr>
     					<th>勤務時間帯</th>
-    					<td>実働8時間</td>
+    					<td>{!! nl2br(e($recruit->work_hours)) !!}</td>
     				</tr>
     				<tr>
     					<th>給与・時給</th>
-    					<td>大卒・大学院卒：月給（初任給）206,000円（2018年4月給与から変更予定）</td>
+    					<td>{!! nl2br(e($recruit->salary)) !!}</td>
     				</tr>
     				<tr>
     					<th>諸手当</th>
-    					<td>通勤手当、残業手当　他</td>
+    					<td>{!! nl2br(e($recruit->allowance)) !!}</td>
     				</tr>
     				<tr>
     					<th>待遇・福利厚生</th>
-    					<td>健康保険、厚生年金保険、雇用保険、労災保険、交通費全額支給</td>
+    					<td>{!! nl2br(e($recruit->welfare)) !!}</td>
     				</tr>
     			</table>
     		</div>
@@ -69,6 +80,9 @@
                 <h2><span>勤務地</span></h2>
                 <p class="recruit_contents">{{ $recruit->tenant->access }}</p>
                 <p class="recruit_contents">{{ $recruit->tenant->address }}</p>
+            </div>
+            <div>
+                <iframe width="860" height="200" src="http://maps.google.co.jp/maps?&output=embed&q={{ $recruit->tenant->address }}&z=18"></iframe>
             </div>
 
     		<div class="page_recruit_contents fadein">
@@ -99,17 +113,29 @@
         </div>
 
             @include('public.contacts.create')
-            @if (count($errors) > 0)
-                @foreach ($errors->all() as $error)
-                    <div class="alert alert-warning">{{ $error }}</div>
-                @endforeach
-            @endif
-
             @include('commons.banner')
 
     </section>
 
+
     <div id="hexagonBg"></div>
 
 </main>
+
+<!-- スライダー　リクルートページ -->
+<script type="text/javascript" src="/js_slick/slick/slick.min.js"></script>
+
+<script>
+    $('.recruit_image_slick').slick({
+        autoplay:true,
+        autoplaySpeed:3000,
+        dots: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll:1,
+        pauseOnDotsHover: true,
+        focusOnSelect:true,
+    });
+</script>
+
 @endsection

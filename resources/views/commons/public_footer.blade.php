@@ -69,7 +69,7 @@
 
             <!--Logo-->
             <div class="footer-main_logo" id="js-footer-main_logo">
-                <img src="/assets/img/common/talent-logo.png" width="100">
+                <img src="/assets/img/common/hopp-logo.gif" width="80">
             </div>
 
             <!--linkbox-->
@@ -85,10 +85,10 @@
                     <li><a href="{{ route('recruitinfo.index')}}">RECRUIT INFO</a></li>
                 </ul>
 
-                <ul class="footer-main_link2">
+                <!-- <ul class="footer-main_link2">
                     <li><a href="https://www.ga-tech.co.jp/privacy_protection/" target="_blank">個人情報のお取り扱い</a></li>
                     <li><a href="#" target="_blank">お問い合わせ</a></li>
-                </ul>
+                </ul> -->
 
             </div>
 

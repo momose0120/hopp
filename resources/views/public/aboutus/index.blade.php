@@ -41,17 +41,17 @@
                 </div>
                 <div class="welfare_workplace_body">
                     <ul class="welfare_workplace_officepics is-appear fade-up-2">
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_01.gif" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_02.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_03.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_04.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_05.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_06.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_07.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_08.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_09.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_10.jpg" alt="保育所風景"></li>
-                        <li class="fade-child"><img src="/assets/img/culture/workplace/office_11.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_1.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_2.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_3.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_4.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_5.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_6.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_7.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_8.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_9.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_10.jpg" alt="保育所風景"></li>
+                        <li class="fade-child"><img src="/assets/img/culture/workplace/aboutus_workplace_11.jpg" alt="保育所風景"></li>
                     </ul>
                 </div>
 

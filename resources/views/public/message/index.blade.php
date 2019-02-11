@@ -15,7 +15,7 @@
                     <!-- <img src="/assets/img/message/ceo/hero-head_label.svg"> -->
                     <div>
                         <h1><span>{{ $message->title }}</span></h1>
-                        <p class="tmc-Hero-head_contentbox_text1">社会福祉法人　タレント<br>
+                        <p class="tmc-Hero-head_contentbox_text1">社会福祉法人　保育所<br>
                             {{ $message->position }}</p>
                         <p class="tmc-Hero-head_contentbox_text2">{{ $message->name_en }}</p>
                         <p class="tmc-Hero-head_contentbox_text3">{{ $message->name }}</p>
@@ -25,8 +25,8 @@
         </div>
 
         <div class="tmc-Hero-detail is-appear fade-up-2" id="js-hero-detail" data-plx="60">
-            <p class="tmc-Hero-detail_text1 fade-child">{{ $message->title }}</p>
-            <p class="tmc-Hero-detail_text2 fade-child">{{ $message->profile }}</p>
+            <p class="tmc-Hero-detail_text1 fade-child">プロフィール</p>
+            <p class="tmc-Hero-detail_text2 fade-child">{!! nl2br(e($message->profile)) !!}</p>
         </div>
 
     </section>
@@ -48,7 +48,7 @@
                             <!-- <img src="/main/assets/img/message/proper-cooke/points-main_topic01.svg" class="fade-child"> -->
                         </div>
                         <h2 class="fade-child">{{ $message->title_01 }}</h2>
-                        <p class="fade-child">{{ $message->content_01 }}</p>
+                        <p class="fade-child">{!! nl2br(e($message->content_01)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -62,7 +62,7 @@
                     <div class="tip-Points-main_contentbox_inner is-appear fade-up-2">
                         <!-- <img src="/main/assets/img/message/proper-cooke/points-main_topic02.svg" class="fade-child"> -->
                         <h2 class="fade-child">{{ $message->title_02 }}</h2>
-                        <p class="fade-child">{{ $message->content_02 }}</p>
+                        <p class="fade-child">{!! nl2br(e($message->content_02)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -76,7 +76,7 @@
                     <div class="tip-Points-main_contentbox_inner is-appear fade-up-2">
                         <!-- <img src="/main/assets/img/message/proper-cooke/points-main_topic03.svg" class="fade-child"> -->
                         <h2 class="fade-child">{{ $message->title_03 }}</h2>
-                        <p class="fade-child">{{ $message->content_03 }}</p>
+                        <p class="fade-child">{!! nl2br(e($message->content_03)) !!}</p>
                     </div>
                 </div>
             </li>
@@ -86,10 +86,10 @@
 
         <div class="tip-Points-banner">
             <div class="is-appear mask-slide-1">
-                <img class="tip-Points-banner_pc interview_image_footer_size" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}>
-                <img class="tip-Points-banner_sp" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}>
+                <img class="tip-Points-banner_pc interview_image_footer_size" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}">
+                <img class="tip-Points-banner_sp" src="{{ asset("image/messages/$message->image_05") }}" alt="{{ $message->image_05_title }}">
             </div>
-            <p class="is-appear tip-Points-banner-cap-bottomright fade-up-1 is-delay">「お客様と未来を<span>"想像"</span>し、<br class="tip-Points-banner_tempbr">お客様の未来を<span>"創造"</span>する。」<br class="tip-Points-banner_tempbr">セールス部の理念を体現する</p>
+            <p class="is-appear tip-Points-banner-cap-bottomright fade-up-1 is-delay">{{ $message->title }}</p>
         </div>
     </section>
 

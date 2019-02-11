@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
+     <div class="row">
         <!-- 応募者総数 -->
         <div class="col-md-6">
             <!-- box -->
             <div class="box box-danger">
                 <!-- header -->
                 <div class="box-header with-border">
-                  <h3 class="box-title"><i class="glyphicon glyphicon-user"></i> 応募者総数（直近３ヶ月）</h3>
+                  <h3 class="box-title"><i class="glyphicon glyphicon-user"></i> 各月応募者数 <span class="small_title">直近３ヶ月<span></h3>
 
                   <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -46,10 +46,10 @@
                'use strict';
                var type = 'bar';
                var data = {
-                   labels: ['<?php if($i !== 2){ print $date[2]; } ?>', '<?php if($i !== 1){ print $date[1]; } ?>', '<?php if($i !== 0){ print $date[0]; } ?>'],
+                   labels: ['<?php if($i > 2){ print $date[2]; } ?>', '<?php if($i > 1){ print $date[1]; } ?>', '<?php if($i > 0){ print $date[0]; } ?>'],
                    datasets: [{
                        label: '応募者数',
-                       data: [<?php if($i !== 2){ print $count[2]; } ?>, <?php if($i !== 1){ print $count[1]; } ?>, <?php if($i !== 0){ print $count[0]; } ?>],
+                       data: [<?php if($i > 2){ print $count[2]; } ?>, <?php if($i > 1){ print $count[1]; } ?>, <?php if($i > 0){ print $count[0]; } ?>],
                        backgroundColor: '#5cb85c',
                        borderWidth: 0
                    }]
@@ -83,7 +83,7 @@
            <div class="box box-success">
                <!-- header -->
                <div class="box-header with-border">
-                 <h3 class="box-title"><i class="glyphicon glyphicon-stats"></i> 応募者数　各保育所（上位３）</h3>
+                 <h3 class="box-title"><i class="glyphicon glyphicon-stats"></i> 各保育所応募者数 <span class="small_title">上位３保育所</span></h3>
 
                  <div class="box-tools pull-right">
                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -160,7 +160,7 @@
               <div class="box box-primary">
                   <!-- header -->
                   <div class="box-header with-border">
-                    <h3 class="box-title"><i class="glyphicon glyphicon-folder-open"></i> 応募者　年齢内訳</h3>
+                    <h3 class="box-title"><i class="glyphicon glyphicon-folder-open"></i> 応募者年齢</h3>
 
                     <div class="box-tools pull-right">
                       <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -189,7 +189,7 @@
             <div class="box box-warning">
                 <!-- header -->
                 <div class="box-header with-border">
-                  <h3 class="box-title"><i class="glyphicon glyphicon-send"></i> 応募者　未対応</h3>
+                  <h3 class="box-title"><i class="glyphicon glyphicon-send"></i> 未対応応募者</h3>
 
                   <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -260,10 +260,10 @@
                'use strict';
                var type = 'doughnut';
                var data = {
-                   labels: ['<?php print $label[0] ?>', '<?php print $label[1] ?>', '<?php print $label[2] ?>', '<?php print $label[3] ?>', '<?php print $label[4] ?>', '<?php print $label[5] ?>'],
+                   labels: ['<?php  if($i >= 1){ print $label[0] ; } ?>', '<?php  if($i >= 2){ print $label[1] ; } ?>', '<?php  if($i >= 3){ print $label[2] ; } ?>', '<?php  if($i >= 4){ print $label[3] ; } ?>', '<?php  if($i >= 5){ print $label[4] ; } ?>', '<?php  if($i >= 6){ print $label[5] ; } ?>'],
                    datasets: [{
-                       data: [<?php print $count[0] ?>, <?php print $count[1] ?>, <?php print $count[2] ?>, <?php print $count[3] ?>, <?php print $count[4] ?>, <?php print $count[5] ?>],
-                       backgroundColor: ['#5cb85c', '#DE4830', '#337ab7', '#8a6d3b', '#f0ad4e', '#5bc0de']
+                       data: [<?php if($i >= 1){ print $count[0] ; } ?>, <?php if($i >= 2){ print $count[1] ; } ?>, <?php if($i >= 3){ print $count[2] ; } ?>, <?php if($i >= 4){ print $count[3] ; } ?>, <?php if($i >= 5){ print $count[4] ; } ?>, <?php if($i >= 6){ print $count[5] ; } ?>],
+                       backgroundColor: [<?php if($i >= 1){ print("'#5cb85c'") ; } else { print("'#ffffff'") ; } ?>, <?php if($i >= 2){ print("'#DE4830'") ; } else { print("'#ffffff'") ; } ?>, <?php if($i >= 3){ print("'#337ab7'") ; } else { print("'#ffffff'") ; } ?>, <?php if($i >= 4){ print("'#8a6d3b'") ; } else { print("'#ffffff'") ; } ?>, <?php if($i >= 5){ print("'#f0ad4e'") ; } else { print("'#ffffff'") ; } ?>, <?php if($i >= 6){ print("'#5bc0de'") ; } else { print("'#ffffff'") ; } ?>]
                    }]
                };
                var options = {

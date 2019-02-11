@@ -30,7 +30,7 @@
     @if (count($recruits) > 0)
     <?php $i = 1; ?>
         <table class="table table-striped">
-            <thead>
+            <thead class="sp_display_none">
                 <tr>
                     <th>#</th>
                     <th>メイン画像</th>
@@ -39,26 +39,26 @@
                     <th>保育所</th>
                     <th>公開・非公開</th>
                     <th>更新日</th>
-                    <th><a class="help" title="「保存」すると削除はされませんが、全件表示に表示されなくなります。
-                    <br />また、「保存」後は「公開」が「非公開」になります。<br />「非保存」すると全件表示に表示されるようになります。"><i class="glyphicon glyphicon glyphicon-question-sign"></i>help</a></th>
+                    <th><a class="help" title="「保存」を押すと、全件表示に表示されなくなる。
+                    <br />元に戻す場合は、「非保存」を押す。"><i class="glyphicon glyphicon glyphicon-question-sign"></i>help</a></th>
                     <th></th>
                 </tr>
             </thead>
         <tbody>
             @foreach ($recruits as $recruit)
                 <tr>
-                    <th>{{ $i }}</th>
+                    <th class="sp_display_none">{{ $i }}</th>
                     <td><img src="{{ asset("image/recruits/$recruit->main_image") }}"　 width="80" height="80" class="img-rounded image_fit_cover" alt="{{ $recruit->main_image_title }}"></td>
                     <td>{{ $recruit->type }}</td>
-                    <td>{{ $recruit->title }}</td>
-                    <td>{{ $recruit->tenant->name }}</td>
+                    <td class="sp_display_none">{{ $recruit->title }}</td>
+                    <td class="sp_display_none">{{ $recruit->tenant->name }}</td>
                     <?php if ($recruit->status === 0){ $status = '公開'; } else { $status = '非公開'; }?>
-                    <td>{{ $status }}</td>
+                    <td class="sp_display_none">{{ $status }}</td>
                     <?php
                         $date = $recruit->updated_at;
                         $date = date('Y/m/d', strtotime($date));
                      ?>
-                    <td>{{ $date }}</td>
+                    <td class="sp_display_none">{{ $date }}</td>
                     <td>
                     {!! Form::open(['route' => ['admin_recruits.edit', $recruit->id], 'method' => 'get']) !!}
                         {!! Form::submit('編集', ['class' => 'btn btn-success btn-block btn-sm']) !!}
@@ -66,7 +66,7 @@
                     </td>
 
                     @if ($mode !== 1)
-                    <td>
+                    <td class="sp_display_none">
                     {!! Form::open(['route' => ['recruit.archive', $recruit->id], 'method' => 'put']) !!}
                         {!! Form::hidden('archive', '1') !!}
                         {!! Form::hidden('status', '1') !!}
@@ -76,7 +76,7 @@
                     @endif
 
                     @if ($mode === 1)
-                    <td>
+                    <td class="sp_display_none">
                     {!! Form::open(['route' => ['recruit.nonarchive', $recruit->id], 'method' => 'put']) !!}
                         {!! Form::hidden('archive', '0') !!}
                         {!! Form::submit('非保存', ['class' => 'btn btn-default btn-block btn-sm']) !!}
@@ -85,7 +85,7 @@
                     @endif
 
                     @if ($mode === 1)
-                    <td>
+                    <td class="sp_display_none">
                     {!! Form::open(['route' => ['admin_recruits.destroy', $recruit->id], 'method' => 'delete']) !!}
                         {!! Form::submit('削除', ['class' => 'btn btn-danger btn-block btn-sm']) !!}
                     {!! Form::close() !!}

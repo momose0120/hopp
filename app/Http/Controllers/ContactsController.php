@@ -224,7 +224,7 @@ class ContactsController extends Controller
         ]);
         $contact = Contact::find($id);
         $contact->result = $request->result;
-        if ($contact->result === '0'){
+        if ($contact->result === 0){
             $contact->progress = $request->progress;
         } else {
             $contact->progress = 2; //結果が入力された場合は、進捗を対応済みにする
